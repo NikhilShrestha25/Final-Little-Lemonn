@@ -4,6 +4,10 @@ import Header from './Header';
 import Booking from './Booking';
 import ConfirmedBooking from './ConfirmedBooking'
 import { useNavigate } from "react-router-dom";
+import Menuu from './Menuu'
+import { ChakraProvider } from "@chakra-ui/react";
+import Menu from './Menu';
+import Login from './Login';
 
 function Main(){
     
@@ -51,9 +55,12 @@ function Main(){
         return (
         <main>
             <Routes>
-                <Route path='/' element={<Header/>}/>
+                <Route path='/login' element={<Login/>}/>   
+                <Route path='/' element={<Header/>}/>   
                 <Route path='/booking' element={<Booking availableTimes={state} dispatch={dispatch} SubmitForm={submitForm}/>}/>
                 <Route path="/confirmed" element={<ConfirmedBooking/>} />
+                <Route path="/menuu" element={<Menuu />} />
+
             </Routes>
         </main>
             

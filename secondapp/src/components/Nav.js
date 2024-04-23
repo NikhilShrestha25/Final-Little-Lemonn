@@ -1,5 +1,6 @@
 import {useState} from 'react';
-import logo from './Logo .svg'
+import logo from './Logo .svg';
+import {Link} from 'react-router-dom';
 function Nav(){
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () =>{
@@ -31,16 +32,16 @@ function Nav(){
                         <a href="/">Services</a>
                     </li>
                     <li>
-                        <a href="/">Menu</a>
+                        <a href="/menuu">Menu</a>
                     </li>
                     <li>
-                        <a href="/">Reservations</a>
+                        <a href="/booking">Reservations</a>
                     </li>
                     <li>
                         <a href="/">Order Online</a>
                     </li>
                     <li>
-                        <a href="/">Login</a>
+                        <a href="/login">Login</a>
                     </li>
                 </ul>
             

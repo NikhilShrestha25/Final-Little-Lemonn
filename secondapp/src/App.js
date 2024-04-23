@@ -5,8 +5,8 @@ import Main from './components/Main';
 import Menu from './components/Menu';
 import {Routes, Route, Link } from 'react-router-dom';
 import Footer from './components/Footer';
-
-
+import Menuu from './components/Menuu';
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (

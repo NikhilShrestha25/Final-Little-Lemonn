@@ -124,7 +124,7 @@ button {
   border-radius: 20px;
 }
 
-
+/* booking form */
 form, .comfirm{
   padding: 10px 13%;
 }
@@ -136,7 +136,8 @@ form, .comfirm{
 input, label{
   display: inline-block;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  
 }
 #book-date, #book-time, #book-guests, #book-occasion{
   background: #bdbdbd43;
@@ -189,7 +190,7 @@ input, label{
 
 .menu-items{
   /* height: 400px; */
-  width: 350px;
+  width: 330px;
   background: #a9c8be;
   border-radius: 8px;
 }
