@@ -1,11 +1,11 @@
 import recipes from '../recipes';
 import Swal from 'sweetalert2';
+import {Link} from 'react-router-dom';
 
 const Menu = () => {
 
     
-
-
+    
     const handleOrder = (id) => {
         console.log(id, "id is clcicked");
         Swal.fire({
@@ -31,7 +31,7 @@ const Menu = () => {
         <div className='menu-container'>
             <div className='menu-header'>
                 <h2>THis weeks specials!</h2>
-                <button>Order Menu</button>
+                <Link to="/menuu"><button aria-label='On Click'>Order Menu</button></Link>
             </div>
             
             {/* menu cards */}

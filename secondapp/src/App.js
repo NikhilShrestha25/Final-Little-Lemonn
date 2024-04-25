@@ -7,13 +7,16 @@ import {Routes, Route, Link } from 'react-router-dom';
 import Footer from './components/Footer';
 import Menuu from './components/Menuu';
 import { ChakraProvider } from "@chakra-ui/react";
+import BgVideo from './components/BgVideo';
+
 
 function App() {
   return (
     <>
       <Nav/>
       <Main/>
-      <Menu/>
+      <Menu/> 
+      <BgVideo/>
       <Footer/>
     </>
   );
